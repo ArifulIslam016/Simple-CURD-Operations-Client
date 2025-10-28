@@ -58,6 +58,7 @@ const Users = ({ userPromise }) => {
               </h5>
               <button onClick={() => handleDeleteUser(user._id)}>X</button>
               <Link to={`/users/${user._id}`}>Details</Link>
+              <Link to={`/update/${user._id}`}>   EditUser</Link>
             </div>
           );
         })}
